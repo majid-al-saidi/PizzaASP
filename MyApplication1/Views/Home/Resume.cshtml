@@ -1,0 +1,23 @@
+﻿@model NameModel
+
+@{
+    ViewData["Title"] = "My Resume";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>This is My first page!</p>
+
+<form asp-controller="Home" asp-action="newName" method="post">
+    <div class="form-group">
+        <label for="fname">First Name</label>
+        <input asp-for=Name type="text" class="form-control" id="Name" placeholder="Enter Your First Name">
+        <small id="nameHelp" class="form-text text-muted">We need your name 😁 .</small>
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input asp-for=Description type="textarea" class="form-control" id="Description" placeholder="Enter Your description">
+        <small id="descriptionHelp" class="form-text text-muted">We need your description 😃 .</small>
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

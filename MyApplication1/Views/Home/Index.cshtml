@@ -1,0 +1,14 @@
+﻿@model List<MyApplication1.Models.NameModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @foreach(NameModel name in Model)
+    {
+        <h1 class="display-4">Welcome @name.Name</h1>
+        <p>@name.Description</p>
+        <br />
+        <br />
+    }
+</div>
