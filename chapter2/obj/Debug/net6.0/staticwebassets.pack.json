@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\images\\office_pizza.gif"
     },
     {
+      "Id": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\images\\pizza.png",
+      "PackagePath": "staticwebassets\\images\\pizza.png"
+    },
+    {
       "Id": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
