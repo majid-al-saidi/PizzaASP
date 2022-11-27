@@ -61,8 +61,16 @@
       "PackagePath": "staticwebassets\\images\\Pizzas\\Vegetarian.png"
     },
     {
+      "Id": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\images\\eating.png",
+      "PackagePath": "staticwebassets\\images\\eating.png"
+    },
+    {
       "Id": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\images\\office_pizza.gif",
       "PackagePath": "staticwebassets\\images\\office_pizza.gif"
+    },
+    {
+      "Id": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\images\\phone-call.png",
+      "PackagePath": "staticwebassets\\images\\phone-call.png"
     },
     {
       "Id": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\images\\pizza.png",

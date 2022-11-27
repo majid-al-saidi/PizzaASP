@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yi2koCbBxEpJrjJO4L1qX7M4Ff/iLt6FlW1JxDVvOTk=",
+  "Hash": "ieDUy9VMlO+YrzJRxXR05EQqeE5WkpLHVLZsfAslQq8=",
   "Source": "chapter2",
   "BasePath": "_content/chapter2",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\images\\eating.png",
+      "SourceId": "chapter2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\",
+      "BasePath": "_content/chapter2",
+      "RelativePath": "images/eating.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\eating.png"
+    },
+    {
       "Identity": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\images\\office_pizza.gif",
       "SourceId": "chapter2",
       "SourceType": "Discovered",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\office_pizza.gif"
+    },
+    {
+      "Identity": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\images\\phone-call.png",
+      "SourceId": "chapter2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\",
+      "BasePath": "_content/chapter2",
+      "RelativePath": "images/phone-call.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\phone-call.png"
     },
     {
       "Identity": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\images\\pizza.png",

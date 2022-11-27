@@ -8,7 +8,7 @@
             <section>
                 <section class="text-gray-600 body-font">
                     <div class="container px-5 py-5 mx-auto">
-                        <div class="p-5 bg-white flex items-center mx-auto border-b  mb-10 border-gray-200 rounded-lg sm:flex-row flex-col">
+                        <div class="p-5 bg-white hover:shadow-sm flex items-center mx-auto border-b  mb-10 border-gray-200 rounded-lg sm:flex-row flex-col">
                         <div class="sm:w-64 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
                             <img
                               src="~/images/Pizzas/Create.png"/>
@@ -21,7 +21,7 @@
                                     <div class="flex  pr-2 h-full items-center">
                                         
                                         <img src="https://i.imgur.com/F0kgy8k.png" width="30" />
-                                        <p class="title-font font-medium">healthy ingredients</p>
+                                        <p class="title-font font-medium">Healthy ingredients</p>
                                     </div>
                                 </div>
                                 <div class="inline-block mr-2" >
@@ -33,7 +33,7 @@
                                 <div class=" inline-block mr-2" >
                                     <div class="flex  pr-2 h-full items-center">
                                         <img src="https://i.imgur.com/F0kgy8k.png" width="30" />
-                                        <p class="title-font font-medium">enjoyable</p>
+                                        <p class="title-font font-medium">Enjoyable</p>
                                     </div>
                                 </div>
                             </div>
@@ -53,87 +53,38 @@
 <section class="min-h-screen body-font text-gray-600 ">
     <div class="container mx-auto px-1 py-10">
       <div class="-m-4 flex flex-wrap">
-        <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-          <a class="relative block h-48 overflow-hidden rounded">
-            <img alt="ecommerce" class="block h-full w-full object-cover object-center cursor-pointer" src="~/images/Pizzas/Bolognese.png" />
-          </a>
-          <div class="mt-4">
-            <h2 class="title-font text-lg font-medium text-gray-900">Bolognese</h2>
-          </div>
-        </div>
+                @foreach(var pizza in Model.Pizzas_list)
+                {
+                    var ImageURL = "/images/Pizzas/" + (@pizza.ImageTitle + ".png");
+                    <div class="w-full p-4 md:w-1/2 lg:w-1/4">
+                      <a class="relative block h-48 overflow-hidden rounded"
+                      asp-area=""
+                      asp-page="Checkout/Checkout"
+                      asp-route-ImageTitle="@pizza.ImageTitle"
+                      asp-route-PizzaName="@pizza.PizzaName"
+                       asp-route-PizzaPrice="@pizza.FinalPrice"
+                       asp-route-OrderValues[0]=0
+                       asp-route-OrderValues[1]=0
+                       asp-route-OrderValues[2]=0
+                       asp-route-OrderValues[3]=0
+                       asp-route-OrderValues[4]=0
+                       asp-route-OrderValues[5]=0
+                       asp-route-OrderValues[6]=0
+                       asp-route-OrderValues[7]=0>
+                        <img alt="@pizza.ImageTitle" 
+                        class="block h-full w-full object-cover object-center cursor-pointer"
+                             src="@ImageURL" />
+                      </a>
+                      <div class="mt-4">
+                            <h2 class="title-font text-lg font-medium text-gray-900">@pizza.PizzaName</h2>
+                      </div>
+                    </div>
+                }
+                
 
-        <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-          <a class="relative block h-48 overflow-hidden rounded">
-            <img alt="ecommerce" class="block h-full w-full object-cover object-center cursor-pointer" src="~/images/Pizzas/Carbonara.png" />
-          </a>
-          <div class="mt-4">
-            <h2 class="title-font text-lg font-medium text-gray-900">Carbonara</h2>
-          </div>
-        </div>
-
-        <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-          <a class="relative block h-48 overflow-hidden rounded">
-            <img alt="ecommerce" class="block h-full w-full object-cover object-center cursor-pointer" src="~/images/Pizzas/Hawaiian.png" />
-          </a>
-          <div class="mt-4">
-            <h2 class="title-font text-lg font-medium text-gray-900">Hawaiian</h2>
-          </div>
-        </div>
-
-        <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-          <a class="relative block h-48 overflow-hidden rounded">
-            <img alt="ecommerce" class="block h-full w-full object-cover object-center cursor-pointer" src="~/images/Pizzas/Margerita.png" />
-          </a>
-          <div class="mt-4">
-            <h2 class="title-font text-lg font-medium text-gray-900">Margerita</h2>
-          </div>
-        </div>
-
-        <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-          <a class="relative block h-48 overflow-hidden rounded">
-            <img alt="ecommerce" class="block h-full w-full object-cover object-center cursor-pointer" src="~/images/Pizzas/MeatFeast.png" />
-          </a>
-          <div class="mt-4">
-            <h2 class="title-font text-lg font-medium text-gray-900">Meat Feast</h2>
-          </div>
-        </div>
-
-        <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-          <a class="relative block h-48 overflow-hidden rounded">
-            <img alt="ecommerce" class="block h-full w-full object-cover object-center cursor-pointer" src="~/images/Pizzas/Mushroom.png" />
-          </a>
-          <div class="mt-4">
-            <h2 class="title-font text-lg font-medium text-gray-900">Mushroom</h2>
-          </div>
-        </div>
-
-        <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-          <a class="relative block h-48 overflow-hidden rounded">
-            <img alt="ecommerce" class="block h-full w-full object-cover object-center cursor-pointer" src="~/images/Pizzas/Pepperoni.png" />
-          </a>
-          <div class="mt-4">
-            <h2 class="title-font text-lg font-medium text-gray-900">Pepperoni</h2>
-          </div>
-        </div>
-
-        <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-          <a class="relative block h-48 overflow-hidden rounded">
-            <img alt="ecommerce" class="block h-full w-full object-cover object-center cursor-pointer" src="~/images/Pizzas/Seafood.png" />
-          </a>
-          <div class="mt-4">
-            <h2 class="title-font text-lg font-medium text-gray-900">Sea food</h2>
-          </div>
-        </div>
-
-        <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-          <a class="relative block h-48 overflow-hidden rounded">
-            <img alt="ecommerce" class="block h-full w-full object-cover object-center cursor-pointer" src="~/images/Pizzas/Vegetarian.png" />
-          </a>
-          <div class="mt-4">
-            <h2 class="title-font text-lg font-medium text-gray-900">Vegetarian</h2>
-          </div>
-        </div>
         
+        
+    </div>
     </div>
   </section>
 
