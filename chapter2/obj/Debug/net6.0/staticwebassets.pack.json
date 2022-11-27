@@ -69,6 +69,14 @@
       "PackagePath": "staticwebassets\\images\\pizza.png"
     },
     {
+      "Id": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\images\\pizza_hero.png",
+      "PackagePath": "staticwebassets\\images\\pizza_hero.png"
+    },
+    {
+      "Id": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\images\\pizza_main_larg.jpg",
+      "PackagePath": "staticwebassets\\images\\pizza_main_larg.jpg"
+    },
+    {
       "Id": "C:\\Users\\bss\\source\\repos\\chapter2\\chapter2\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
