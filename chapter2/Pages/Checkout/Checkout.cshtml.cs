@@ -1,3 +1,5 @@
+using chapter2.data;
+using chapter2.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Security.Cryptography.X509Certificates;
@@ -21,11 +23,18 @@ namespace chapter2.Pages.Checkout
 
         public DateTime current_date { get; set; }
 
+        private readonly ApplicationDbContext _context;
+
+        public CheckoutModel(ApplicationDbContext context)
+        {
+            _context= context;
+        }
+
         public void OnGet()
         {
             if (string.IsNullOrEmpty(PizzaName))
             {
-                PizzaName = "Custom";
+                PizzaName = "Custom Pizza";
             }
             if (string.IsNullOrEmpty(ImageTitle))
             {
@@ -36,8 +45,12 @@ namespace chapter2.Pages.Checkout
                 CustomerName= "CustomerName";
             }
 
+            PizzaOrders newPizzaOrder = new PizzaOrders();
+            newPizzaOrder.PizzaName = PizzaName;
+            newPizzaOrder.BasePrice = PizzaPrice;
             
-            
+            _context.PizzaOrders.Add(newPizzaOrder);
+            _context.SaveChanges();
         }
     }
 }
