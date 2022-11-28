@@ -57,7 +57,7 @@
                 {
                     var ImageURL = "/images/Pizzas/" + (@pizza.ImageTitle + ".png");
                     <div class="w-full p-4 md:w-1/2 lg:w-1/4">
-                      <a class="relative block h-48 overflow-hidden rounded"
+                        <a class="relative block h-48 overflow-hidden rounded transform  transition duration-500 hover:scale-110 hover:shadow-md"
                       asp-area=""
                       asp-page="Checkout/Checkout"
                       asp-route-ImageTitle="@pizza.ImageTitle"
@@ -71,8 +71,8 @@
                        asp-route-OrderValues[5]=0
                        asp-route-OrderValues[6]=0
                        asp-route-OrderValues[7]=0>
-                        <img alt="@pizza.ImageTitle" 
-                        class="block h-full w-full object-cover object-center cursor-pointer"
+                        <img alt="@pizza.ImageTitle"
+                             class="block h-full w-full object-cover object-center cursor-pointer "
                              src="@ImageURL" />
                       </a>
                       <div class="mt-4">
